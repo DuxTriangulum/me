@@ -216,18 +216,22 @@
         <a class="social-button" href="https://youtube.com/@simplethings38" target="_blank">
           <i class="fab fa-youtube"></i> 📺 YouTube
         </a>
-        <a class="social-button" id="email-link" href="#">
-          <i class="fas fa-envelope"></i> 📧 Email
-        </a>
+        <p style="display:inline-block; margin: 0;" class="social-button">
+          <i class="fas fa-envelope"></i> 📧 Email: <span id="email"></span>
+        </p>
       </div>
     </section>
     
     <script>
-      const user = "simplethings38s";
-      const domain = "gmail.com";
-      const emailLink = document.getElementById("email-link");
-      emailLink.href = `mailto:${user}@${domain}`;
-      emailLink.innerHTML = `<i class="fas fa-envelope"></i> 📧 ${user}@${domain}`;
+      (function(){
+        const user = 'simplethings38s';
+        const domain = 'gmail.com';
+        const email = user + '@' + domain;
+        const link = document.createElement('a');
+        link.href = 'mailto:' + email;
+        link.textContent = email;
+        document.getElementById('email').appendChild(link);
+      })();
     </script>
   </main>
 
