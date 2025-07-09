@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mehmet Eren Karatepe</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #000;
+      color: #e0e0e0;
+    }
+
+    header, footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #111;
+      color: #ccc;
+    }
+
+    .profile-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 1rem 2rem;
+    }
+
+    .profile-pic {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(128, 0, 255, 0.5);
+      margin-bottom: 1.5rem;
+      transition: transform 1s ease-in-out;
+    }
+
+    .profile-pic:hover {
+      transform: rotateY(360deg);
+    }
+
+    .profile-pic img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin: 0.5rem 0;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: #bb86fc;
+      margin-bottom: 1rem;
+    }
+
+    .section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    .social-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .social-button {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.9rem 1.6rem;
+      border-radius: 12px;
+      color: white;
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      background: linear-gradient(45deg, #6a00ff, #bb00ff);
+      box-shadow: 0 0 15px rgba(187, 0, 255, 0.4);
+      transition: transform 0.3s, box-shadow 0.3s;
+      animation: pulse 2s infinite;
+    }
+
+    .social-button:hover {
+      transform: translateY(-4px) scale(1.05);
+      box-shadow: 0 0 25px rgba(187, 0, 255, 0.7);
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.03); }
+      100% { transform: scale(1); }
+    }
+
+    @media (max-width: 600px) {
+      .social-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>👾 Mehmet Eren Karatepe</h1>
+    <p>Welcome to my personal space on the internet</p>
+  </header>
+
+  <main>
+    <div class="profile-section">
+      <div class="profile-pic">
+        <img src="assets/img/pp.png" alt="Profile Picture" />
+      </div>
+      <h1>🙋‍♂️ Hey, I'm Mehmet — but feel free to call me Ellen</h1>
+      <p>A passionate mind trying to unify humanity through knowledge & technology.</p>
+    </div>
+
+    <section class="section">
+      <h2>🧠 About Me</h2>
+      <p>I am an 18-year-old from Turkey with a deep passion for technology, science and human potential. My journey revolves around exploring neuroscience, artificial intelligence, computer science, history, quantum physics, astrophysics, astronomy, psychology and more.</p>
+      <p>I believe in building a better future by combining innovation and purpose, and I know we can't do it alone. We need a united world, and together we can make it happen.</p>
+    </section>
+
+    <section class="section">
+      <h2>🔗 Connect with Me</h2>
+      <div class="social-buttons">
+        <a class="social-button" href="https://www.linkedin.com/in/mehmet-eren-karatepe-35503a369" target="_blank">
+          <i class="fab fa-linkedin"></i> 💼 LinkedIn
+        </a>
+        <a class="social-button" href="https://github.com/DuxTriangulum" target="_blank">
+          <i class="fab fa-github"></i> 🧑‍💻 GitHub
+        </a>
+        <a class="social-button" href="https://youtube.com/@simplethings38" target="_blank">
+          <i class="fab fa-youtube"></i> 📺 YouTube
+        </a>
+        <a class="social-button" href="mailto:simplethings38s@gmail.com">
+          <i class="fas fa-envelope"></i> 📧 Email
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Mehmet Eren Karatepe — All rights reserved</p>
+  </footer>
+</body>
+</html>
